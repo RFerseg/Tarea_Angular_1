@@ -1,0 +1,111 @@
+/*Para quitar los margenes */
+body{
+    margin: 0px;
+    padding: 0px;
+    height: calc(100vh - 56px);
+  }
+  
+  /*Para poner imagen de fondo*/
+  .principal{
+      background-color: #1E1E1E;
+      background-image: url("../../../assets/img/Fondo_Pantalla.jpg");
+      background-size: cover;
+  }
+
+  /*---------------------------------------------------------------------*/
+  .col-12{
+      
+      display: flex;
+      justify-content: center;    
+  }
+  
+  .contenedor{
+      width: 400px;
+      height: 450px;
+      margin-top: 75px;
+      background-color: rgba(29, 32, 211, 0.5);
+      border-radius: 8px;  
+      padding: 15px;
+  }
+  
+  .row{
+      display: flex;
+      justify-content: center;
+  }
+ 
+
+  .logo-empresa{
+    width: 65px;
+    margin-left: 4px;
+    margin-right: 10px;
+  }
+
+  hr{
+      background-color: #ffffff;
+      height: 8px;
+  }
+  /*------------------------------*/
+  /*Login*/
+  #form{
+    margin-top: 45px;
+    color: white;
+    font-size: 18px;  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.caja_usuario{
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.caja_password{
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.icon_avatar img{
+    width: 20px;
+    margin-top: 4px;
+}
+
+.icon_pass img{
+    width: 20px;
+    margin-top: 4px;
+}
+
+.caja_usuario .divider{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.caja_password .divider{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#txtName{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+#txtPass{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.botonIngresar{
+    display: flex;
+    justify-content: center;
+}
+
+
+  

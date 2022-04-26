@@ -1,0 +1,78 @@
+<div class="row justify-content-center align-items-center m-0 mt-5 ">
+    <div class="col-5 mx-3">
+        <div class="card shadow">
+            <div class="card-header text-info text-center bg-secondary">
+                <h3 class="card-title">Lista de Artículos</h3>            
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table table-success table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Código Artículo</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>% Impuestos</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of lista">
+                                    <td>{{item.codigoArticulo}}</td>
+                                    <td>{{item.nombre}}</td>
+                                    <td>{{item.precio}}</td>
+                                    <td>{{item.impuesto}}</td>
+                                    <td>{{item.precioFinal}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+    <div class="col-5 mx-3">
+        <div class="card shodow">
+            <div class="card-header text-info text-center bg-secondary ">
+                <h3 class="card-title">Mantenimiento de Artículos</h3>            
+            </div>
+            <div class="card-body">
+                <div class="my-2">
+                    <label> Código Artículo</label>
+                    <input [(ngModel)] = "nuevoArticulo.codigoArticulo" type="number" class="form-control" placeholder="Digite el código...">
+                </div>
+        
+                <div class="my-2">
+                    <label> Nombre</label>
+                    <input [(ngModel)] = "nuevoArticulo.nombre" type="text" class="form-control" placeholder="Digite el nombre...">
+                </div>
+                
+                <div class="my-2">
+                    <label> Precio</label>
+                    <input [(ngModel)] = "nuevoArticulo.precio" type="number" class="form-control" placeholder="Digite el precio...">
+                </div>
+               
+                <div class="my-2">
+                    <label> % Impuestos</label>
+                    <input [(ngModel)] = "nuevoArticulo.impuesto" type="number" class="form-control" placeholder="Digite el % de impuestos...">
+                </div>
+
+            </div>
+            <div class="card-footer form-control">
+                <div class="my-2">
+                    <label> Precio Final</label>
+                    <input readonly [(ngModel)] = "nuevoArticulo.precio + nuevoArticulo.precio * nuevoArticulo.impuesto" type="number" class="form-control">
+                </div> 
+            </div>  
+
+            <div class="card-footer d-flex justify-content-end">
+                <button class="btn btn-primary"(click) = "Guardar()">Guardar</button>
+             </div> 
+        </div>
+    </div>
+
+
+</div>
