@@ -60,13 +60,12 @@
                     <input [(ngModel)] = "nuevoArticulo.impuesto" type="number" class="form-control" placeholder="Digite el % de impuestos...">
                 </div>
 
-            </div>
-            <div class="card-footer form-control">
                 <div class="my-2">
                     <label> Precio Final</label>
                     <input readonly [(ngModel)] = "nuevoArticulo.precio + nuevoArticulo.precio * nuevoArticulo.impuesto" type="number" class="form-control">
                 </div> 
-            </div>  
+
+            </div> 
 
             <div class="card-footer d-flex justify-content-end">
                 <button class="btn btn-primary"(click) = "Guardar()">Guardar</button>
