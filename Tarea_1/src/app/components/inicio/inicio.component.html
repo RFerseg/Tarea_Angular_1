@@ -14,7 +14,7 @@
                         </div>
                         <div class="divider">|</div>
                         <div>
-                            <input type="text" id="txtUser" placeholder="Usuario..." required>
+                            <input [(ngModel)] = "usuario" type="text" id="txtUser" placeholder="Usuario..." required>
                         </div>
      
                     </div>
@@ -25,13 +25,13 @@
                         </div>
                         <div class="divider">|</div>
                         <div>
-                            <input type="password" id="txtPass" placeholder="Contraseña..." autocomplete="off" autocapitalize="off" required>
+                            <input [(ngModel)] = "pass" type="password" id="txtPass" placeholder="Contraseña..." autocomplete="off" autocapitalize="off" required>
                        
                         </div>
                     </div>                
                     <br>
                     <div class="botonIngresar">
-                        <button class="btn btn-dark fs-5">
+                        <button class="btn btn-dark fs-5"(click)="InicioSesion()" >
                             Ingresar
                         </button>
                     </div>
